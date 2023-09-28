@@ -1,0 +1,66 @@
+// Задача: дополнить scss правила так, чтобы представленная html разметка приобрела вид как на картинке.
+
+.dialog-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background-color: #fff;
+
+  max-width: 350px;
+
+  &__header {
+    background-color: #ddd;
+    display: flex;
+  }
+
+  &__header-title-container {
+    width: 70%;
+  }
+
+  &__header-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__content {
+    max-height: 300px;
+    display: flex;
+  }
+
+  &__content-block {
+    &_left {
+      width: 30%;
+
+      border-right: 1px solid #ccc;
+      max-height: 500px;
+    }
+
+    &_right {
+      width: 70%;
+      overflow-y: scroll;
+    }
+  }
+
+  &__footer {
+    background-color: #ddd;
+    text-align: center;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}

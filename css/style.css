@@ -1,0 +1,53 @@
+.dialog-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background-color: #fff;
+  max-width: 350px;
+}
+.dialog__header {
+  background-color: #ddd;
+  display: flex;
+}
+.dialog__header-title-container {
+  width: 70%;
+}
+.dialog__header-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dialog__content {
+  max-height: 300px;
+  display: flex;
+}
+.dialog__content-block_left {
+  width: 30%;
+  border-right: 1px solid #ccc;
+  max-height: 500px;
+}
+.dialog__content-block_right {
+  width: 70%;
+  overflow-y: scroll;
+}
+.dialog__footer {
+  background-color: #ddd;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}
